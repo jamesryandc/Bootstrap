@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title> My Project </title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+	  <a class="navbar-brand" href="#">LIS 161</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">News</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">My Profile</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Settings
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			  <a class="dropdown-item" href="#">Log In</a>
+			  <a class="dropdown-item" href="#">About Us</a>
+			  <a class="dropdown-item" href="#">Frequently Asked Questions (FAQs)</a>
+			</div>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	<main class="container">
+	<h1 class="mt-2"> Sign up for your profile </h1>
+	<form>
+		  <div class="form-row">
+			<div class="form-group col-sm-5">
+			  <label for="inputFirstName">First Name</label>
+			  <input type="text" class="form-control" id="inputFirstName" placeholder="Juan">
+			</div>
+			<div class="form-group col-sm-2">
+			  <label for="inputMI">MI</label>
+			  <input type="text" class="form-control" id="inputMI" placeholder="A">
+			</div>
+			<div class="form-group col-sm-5">
+			  <label for="inputLastName">Last Name</label>
+			  <input type="text" class="form-control" id="inputLastName" placeholder="dela Cruz">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputBirthdate">Birthdate</label>
+			<input type="date" class="form-control" id="inputBirthdate">
+		  </div>
+		  <div class="form-group">
+			<label for="inputAddress">Address</label>
+			<input type="text" class="form-control mb-2" id="inputAddress" placeholder="Street Address">
+			<input type="text" class="form-control" id="inputAddress" placeholder="Street Address 2">
+			<div class="form-row">
+				<div class="form-group col-sm-6">
+				  <input type="text" class="form-control mt-2" id="inputCity" placeholder="City">
+				</div>
+				<div class="form-group col-sm-6">
+				  <input type="text" class="form-control mt-2" id="inputSP" placeholder="State / Province">
+				</div>
+				<div class="form-group col-sm-6">
+				  <input type="text" class="form-control" id="inputZIP" placeholder="Postal / ZIP Code">
+				</div>
+				<div class="form-group col-sm-6">
+					<select id="inputState" class="form-control">
+					<option selected>Select Country...</option>
+					<option>Philippines</option>
+					<option>Japan</option>
+					<option>South Korea</option>
+				  </select>
+				</div>
+			</div>
+		  </div>
+		  <div class="form-row">
+			<div class="form-group col-sm-5">
+			  <label for="inputEmail">Email Address</label>
+			  <input type="text" class="form-control" id="inputEmail" placeholder="xxxxx@xxx.com">
+			</div>
+			<div class="form-group col-sm-3">
+			  <label for="inputCC">Phone Number</label>
+			  <input type="text" class="form-control" id="inputCC" placeholder="Country Code">
+			</div>
+			<div class="form-group col-sm-4">
+			<label for="inputPN"> . </label>
+			  <input type="text" class="form-control" id="inputPN" placeholder="Phone Number">
+			</div>
+		  </div>
+		  <div>
+			<p>Picture</p>
+			<img src="images/icon.png" style="width: 14em; height: 14em; margin-left: 4em;" /><br/>
+			<button type="button" class="btn btn-secondary" style="margin: 2em 0em 2em 7em;">Choose file</button>
+		  </div>
+		  <div class="form-group">
+			<label for="exampleFormControlTextarea1">About yourself</label>
+			<textarea class="form-control" id="exampleFormControlTextarea1" rows= "3" placeholder="Input description"></textarea>
+			<a href="#"><img src="images/captcha.png" style= "width: 22em; height: 7em; margin: 2em auto 2em auto; display: block;"/></a><br/>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">Sign Up</button>
+		  </div>
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					You have successfully signed up for an account.
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Log In</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  
+		</form>
+	</main>
+	<script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
